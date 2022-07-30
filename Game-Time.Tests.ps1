@@ -7,21 +7,9 @@ if (-Not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
  }
 }
 
-$onedrive = Get-Process OneDrive -ErrorAction SilentlyContinue
-if ($onedrive) {
-    taskkill /F /T /IM OneDrive.exe |Out-Null
-    }
-  Remove-Variable onedrive
+taskkill /F /T /IM OneDrive.exe 
 
-$googledrivefs = Get-Process GoogleDriveFS -ErrorAction SilentlyContinue
-if ($googledrivefs) {
-    taskkill /F /T /IM GoogleDriveFS.exe |Out-Null
-    }
-  Remove-Variable googledrivefs
+taskkill /F /T /IM GoogleDriveFS.exe
 
-#
-
-#
-
-& "C:\Users\yen\source\scrips\Toggle Defender.ps1" 
+& "C:\Users\yen\source\scrips\Toggle Defender.ps1"
 
