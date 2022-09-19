@@ -1,0 +1,6 @@
+sudo apt -y install git micro bat yadm zsh \
+ranger zoxide stow fzf exa trash-cli ripgrep \
+fd-find
+
+sudo snap install --classic code
+sudo snap install btop procs
