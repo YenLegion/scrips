@@ -100,9 +100,11 @@ bootstrap_echo "We need to check for updates and install some packages."
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt -y install git micro bat yadm zsh ranger zoxide stow fzf exa trash-cli
+sudo apt -y install git micro bat yadm zsh ranger zoxide stow fzf exa trash-cli \
+ripgrep fd-find tig delta
 
 sudo snap install --classic code
+sudo snap install btop procs;
 
 bootstrap_echo "ZSH Setup"
 
