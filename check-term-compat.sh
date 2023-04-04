@@ -1,3 +1,4 @@
+#! /bin/zsh
 if autoload -U is-at-least && is-at-least 5.7; then
   echo "ZSH $ZSH_VERSION: supports true color"
 else

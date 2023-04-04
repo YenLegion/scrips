@@ -1,0 +1,2 @@
+(Get-Command oh-my-posh).Source 
+
