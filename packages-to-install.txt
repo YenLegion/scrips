@@ -1,0 +1,7 @@
+# List of apps to install on new systems, formatted for debian-based systems, currently.
+
+sudo apt -y install git micro bat yadm zsh ranger zoxide stow fzf exa trash-cli \
+ripgrep fd-find tig delta 
+
+sudo snap install --classic code
+sudo snap install btop procs
