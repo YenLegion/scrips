@@ -100,10 +100,9 @@ bootstrap_echo "We need to check for updates and install some packages."
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt -y install git micro bat yadm zsh ranger zoxide stow fzf exa ripgrep fd-find tig delta
-# Additions#
-# sudo apt -y install lazygit lazydocker
-# trash-cli
+sudo apt -y install git micro bat yadm zsh ranger zoxide stow fzf exa trash-cli \
+ripgrep fd-find tig delta
+
 sudo snap install --classic code
 sudo snap install btop procs;
 
@@ -125,9 +124,9 @@ bootstrap_echo "Setting up ZSH"
 
 # figure out test for password entry with chsh -s /bin/zsh
 
-if [ ! -d "$HOME/.zsh/antidote" ]; then
-git clone https://github.com/jandamm/zgenom.git ~/zgenom
-fi
+#if [ ! -d "$HOME/genom" ]; then
+#git clone https://github.com/jandamm/zgenom.git ~/zgenom
+#fi
 
 #if [ ! -d "$HOME/zsh-quickstart-kit" ]; then
 #git clone https://github.com/unixorn/zsh-quickstart-kit.git ~/zsh-quickstart-kit
