@@ -12,7 +12,22 @@ $targetApplications = @(
     "dopus",
     "Twinkle Tray",
     "wfc",
-    "DefenderUI"
+    "DefenderUI",
+    "vmware*",
+    "vmnetdhcp",
+    "vmnat",
+    "vagrant-vmware-utility",
+    "bitsumsessionagent",  
+    "BudsManager",
+    "Everything64",
+    "LogiOverlay"
+    "PowerSwitcher.TrayApp",
+    "SystemTrayMenu",
+    "crowdsec",
+    "ParkControl"
+    "ONENOTEM.EXE"
+    "7+ Taskbar Tweaker",
+    "yfwtray"    
     )
 $processes = Get-Process | Where-Object { $targetApplications -contains $_.ProcessName }
 
@@ -45,5 +60,6 @@ $processes | ForEach-Object {
     }
 }
 Write-Host "All matching applications closed."
+
 
 

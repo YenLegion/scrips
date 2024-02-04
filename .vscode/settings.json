@@ -1,3 +1,6 @@
 {
-    "editor.fontFamily": "SauceCodePro NF, Consolas, monospace"
+    "editor.fontFamily": "SauceCodePro NF, Consolas, monospace",
+    "files.associations": {
+        "*.yaml": "home-assistant"
+    }
 }
